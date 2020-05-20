@@ -8,7 +8,7 @@ class NewsContainer extends Component {
     super(props)
     this.state = {
     stories: [],
-    input: " "
+    input: ""
     }
   }
   
@@ -39,11 +39,11 @@ class NewsContainer extends Component {
   }
 
   render() { 
-    return ( <>
-    <h1>Hacker News</h1>
+    return ( <div id="main-body">
+    <h1 id="main-header">Hacker News</h1>
     <SearchBox sendSearch={this.sendSearch}/>
     <StoryList input={this.state.input} stories={this.state.stories}/>
-    </> );
+    </div> );
   }
 }
 

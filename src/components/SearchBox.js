@@ -15,14 +15,14 @@ class SearchBox extends Component {
 
   render() { 
     return ( 
-      <>
+      <div class="search">
         <label value="filter">Filter By Title: </label>
         <input 
         type="text" 
         id="filter"
         value={this.state.input}
         onChange={this.handleSearchChange}/>
-      </>
+      </div>
      );
   }
 }
