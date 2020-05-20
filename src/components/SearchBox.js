@@ -9,15 +9,14 @@ class SearchBox extends Component {
   }
 
   handleSearchChange = (e) => {
-    this.setState({input: e.target.value});
-    this.props.sendSearch({input: this.state.input});
-    
+    this.setState({input: e.target.value})
+    this.props.sendSearch({input: e.target.value})
   }
 
   render() { 
     return ( 
       <>
-        <label value="filter">Filter By Title</label>
+        <label value="filter">Filter By Title: </label>
         <input 
         type="text" 
         id="filter"

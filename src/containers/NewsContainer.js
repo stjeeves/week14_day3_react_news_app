@@ -35,7 +35,7 @@ class NewsContainer extends Component {
   }
 
   sendSearch = (input) => {
-    this.setState({input: input})
+    this.setState({input: input.input})
   }
 
   render() { 
